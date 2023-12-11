@@ -9,8 +9,12 @@ In the project directory, you can run:
 ### `npm install`
 ### `npm install -g serve`
 ### `serve -s build`
+if you encounter some errors then run: ### `nvm install 16.0.0`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
- 
+static deployed site on render : [https://news-zxmr.onrender.com/](https://news-zxmr.onrender.com/)
+![image](https://github.com/Rajneesh100/news_app/assets/75190067/24c4c529-0168-460f-923a-b5b0fe409735)
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
