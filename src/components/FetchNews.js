@@ -58,23 +58,25 @@ export default function FetchNews() {
                 type="text"
                 name="text"
                 id="text"
-                placeholder="Search for something..."
+                placeholder="Search your Query..."
                 autoComplete="off"
                 required
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                className="w-full py-2 px-4 rounded bg-transparent border border-gray-700 focus:border-gray-600 transition-all duration-150 outline-none text-gray-700 placeholder-gray-700 text-xl lg:text-4xl lg:pb-4 mr-5"
+                className="w-full py-2 px-4 rounded bg-transparent border border-gray-700 focus:border-gray-700 transition-all duration-150 outline-none text-green-700 placeholder-gray-700 text-xl lg:text-2xl lg:pb-4 mr-5"
               />
               <button
                 type="submit"
                 onClick={handleSubmit}
-                className="bg-white border border-gray-700 text-xl lg:text-4xl py-2 px-6 rounded lg:pb-4 text-gray-700 hover:bg-transparent transition-all duration-150"
+                className="bg-white border border-gray-700 text-xl lg:text-2xl py-2 px-6 rounded lg:pb-4 text-green-700 hover:bg-transparent transition-all duration-150"
               >
                 Search
               </button>
             </form>
             {/* End of search form */}
+             
 
+             {/* big heading in middle */}
             <article className="my-10 flex flex-col items-center justify-center container lg:max-w-4xl mx-auto px-5">
               <h1 className="font-bold text-center text-4xl my-5 text-white lg:text-6xl">
                 {largeTitle.title}
@@ -83,12 +85,14 @@ export default function FetchNews() {
                 href={largeTitle.url}
                 target="_blank"
                 rel="noreferrer"
-                className="border-b border-gray-700 text-gray-600 text-lg hover:text-gray-400 hover:border-gray-400"
+                className="border-b border-gray-700 text-gray-600 text-lg hover:text-green-400 hover:border-green-400"
               >
                 Read Full Story
               </a>
             </article>
-
+            
+            
+            {/* CATEGORY */}
             <article className="container mx-auto lg:max-w-4xl px-5">
               <p className="text-gray-600">
                 Category:{" "}
@@ -118,7 +122,7 @@ export default function FetchNews() {
                         href={url}
                         target="_blank"
                         rel="noopenner noreferrer"
-                        className="border-b border-gray-700 text-gray-600 text-lg hover:text-gray-400 hover:border-gray-400"
+                        className="border-b border-gray-700 text-gray-600 text-lg hover:text-green-400 hover:border-green-400"
                       >
                         Read More
                       </a>
